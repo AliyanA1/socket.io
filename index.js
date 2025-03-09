@@ -3,7 +3,7 @@ const fs=require("fs");
 const zlib=require("zlib");
 const app=express();
  
-
+//socket io
  
 
 app.get("/",(req,res)=>{
@@ -16,4 +16,4 @@ fs.createReadStream("./hey.txt").pipe(
    zlib.createGzip().pipe(fs.createWriteStream("./hey.zip"))
 )
 
-app.listen(4000)
+app.listen(5000)
